@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layouts</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            background-color: rgb(255, 200, 243);
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: rgb(13, 13, 14);
+        }
+        nav{
+            float: left;
+            width: 30%;
+            height: 300px;
+            background-color: rgb(255, 149, 220);
+            padding: 20px;
+        }
+        nav ul{
+            list-style-type: none;
+            padding: 0;
+        }
+        article{
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: rgb(255, 117, 237);
+            height: 300px;
+        }
+        section::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        footer{
+            background-color: rgb(164, 255, 243);
+            padding: 10px;
+            text-align: center;
+            color: rgb(255, 189, 244);
+        }
+        @media(max-width: 600px){
+            nav, article{
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>ANIMALES FAVORITOS</h2>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="https://www.nationalgeographic.com.es/animales/mariposas">Mariposa</a></li>
+                <li><a href="https://www.google.com/imgres?imgurl=https%3A%2F%2Fatlasanimal.com%2Fwp-content%2Fuploads%2F2021%2F02%2Fabeja.jpg&imgrefurl=https%3A%2F%2Fatlasanimal.co">Abeja</a></li>
+                <li><a href="https://twitter.com/respetocanas/status/1370061516251205633?lang=da"> Conejito</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h1>Lista de canciones</h1>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam hic non reprehenderit neque nisi. Similique magnam non inventore iste beatae cum! Tenetur voluptatum sit deserunt voluptates voluptate! Porro, omnis ab!
+            </p>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate perferendis quidem iusto cum debitis unde fugiat mollitia iste, eos provident ipsum maiores sunt eaque, voluptas distinctio nihil consequatur eligendi quos?
+            </p>
+        </article>
+    </section>
+    <footer>
+        <p>Mis Animales Favoritos &copy; 2023</p>
+    </footer>
+
+    <div style="background-color: rgb(241, 9, 214); border:2px solid rgb(255, 203, 249);">
+        Aumna:  Apodaca Morales Hasly Kamila Práctica 4 Fecha: 08/02/2023 - &copy; 2023 - hasly.apodaca21@cetis107.edu.mx
+    </div>
+</body>
+</html>
