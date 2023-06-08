@@ -19,9 +19,12 @@ for($i=0; $i<count($cuadros); $i++){
 
 if($cuadros [0] =="X" && $cuadros[1] =="X" && $cuadros[2] =="X"){
     echo "<h1>Felicidades eres ganador :) X</h1>";
+    echo "<img src='fil1.png' width='25%'><hr>";
     return;
 } else if($cuadros [0] =="O" && $cuadros[1] =="O" && $cuadros[2] =="O"){
     echo "<h1>Felicidades eres ganador :) O</h1>";
+    echo "<img src='fil1.png' width='25%'><hr>";
+    return;
 }
 
 /*
@@ -31,21 +34,27 @@ if($cuadros [0] =="X" && $cuadros[1] =="X" && $cuadros[2] =="X"){
 */
 if($cuadros [3] =="X" && $cuadros[4] =="X" && $cuadros[5] =="X"){
     echo "<h1>Felicidades eres ganador :) X</h1>";
+    echo "<img src='fil2.png' width='25%'><hr>";
     return;
 } else if($cuadros [3] =="O" && $cuadros[4] =="O" && $cuadros[5] =="O"){
     echo "<h1>Felicidades eres ganador :) O</h1>";
+    echo "<img src='fil2.png' width='25%'><hr>";
+    return;
 }
 
 /*
  [][][]
- [6][7][8]
  [][][]
+ [6][7][8]
 */
 if($cuadros [6] =="X" && $cuadros[7] =="X" && $cuadros[8] =="X"){
     echo "<h1>Felicidades eres ganador :) X</h1>";
+    echo "<img src='fil3.png' width='25%'><hr>";
     return;
 } else if($cuadros [6] =="O" && $cuadros[7] =="O" && $cuadros[8] =="O"){
     echo "<h1>Felicidades eres ganador :) O</h1>";
+    echo "<img src='fil3.png' width='25%'><hr>";
+    return;
 }
 
 /*
@@ -53,11 +62,14 @@ if($cuadros [6] =="X" && $cuadros[7] =="X" && $cuadros[8] =="X"){
  [][4][]
  [][][8]
 */
-if($cuadros [0] =="X" && $cuadros[4] =="X" && $cuadros[8] =="X"){
+if($cuadros [0] =="X" && $cuadros[4] =="X" && $cuadros[8] =="X"){ 
     echo "<h1>Felicidades eres ganador :) X</h1>";
+    echo "<img src='fil4.png' width='25%'><hr>";
     return;
 } else if($cuadros [0] =="O" && $cuadros[4] =="O" && $cuadros[8] =="O"){
     echo "<h1>Felicidades eres ganador :) O</h1>";
+    echo "<img src='fil4.png' width='25%'><hr>";
+    return;
 }
 
 /*
