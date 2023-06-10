@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurar juego Ahorcado</title>
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+<body style="background-color: #f7c1d9;"> 
+    <div class="container">
+        <div class="row">
+            <h1>Configurar Juego</h1><hr>
+            <form action="Practica7.php" method="POST">
+                <div class="form-group">
+                    <label for="">Nombre del jugador:</label>
+                    <input type="text" required name="jugador" class="form-control" value="Hasly" style="background-color: aquamarine;">
+                </div><br>
+                <div class="form-group">
+                    <label for="">Palabra:</label>
+                    <input type="text" required name="palabra" class="form-control" value="Vida" style="background-color: aquamarine;">
+                </div><br>
+                <div class="form-group">
+                    <label for=""># vidas:</label>
+                    <input type="number" required name="vidas" class="form-control" value="6" style="background-color: aquamarine;">
+                </div><br>
+                <div>
+                    <input type="submit" class="btn btn-primary" style="background-color: #9f00ff;">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
