@@ -27,18 +27,10 @@
             $carta1 = $_POST["carta1"];
             $carta2 = $_POST["carta2"];
             //Aquí empieza la lógica del juego
-            $carta=randa(1,54);
-            if(isset($_POST["cartas_dadas"])){
-                $cartas_dadas = $_POST ["cartas_dadas"];
+            $carta=rand(1,54);
+               echo "<h2>Carta dada <img src='fotos_loteria/".$carta.".jpeg' class='img-fluid' width='100px'></h2>";
 
-            }else{
-                $cartas_dadas = [];
-            }
-           
-
-            array_push($cartas_dadas, $carta);
-
-         }else {
+         } else{
             $carta1 = [];
             $total = 0;
             while($total < 16){
@@ -59,21 +51,16 @@
                 }
             }
         ?>
-            <input type="submint" value="Dar carta" name="carta" class="btn btn-primary" style="background-color:#ff71ce">
+            <input type="submit" value="Dar carta" name="carta" class="btn btn-primary" style="background-color:#ff71ce">
         <div class="row">
             <div class="col-6">
                 <div class="row m-1">
                         <?php
                          //Pintar Carta 1 
                         for($i=0; $i<16; $i++){
-                            if(array_search($carta1[$i], $cartas_dadas) ===false){
                                 echo "<div class='col-3 p-0'><img src='fotos_loteria/".$carta1[$i].".jpeg' class='img-thumbnail'></div>";
-                            }else{
-                                echo "<div class='col-3 p-0'><img src='fotos_loteria/".$carta1[$i].".jpeg' class='img-thumbnail'></div>";
+                                echo "<input type='hidden' name='carta1[]' value='" .$carta1[$i]."'>";    
                             }    
-                            echo "<input type='hidden' name='cartas_dadas[]' value='" .$carta1."'>"; 
-                            echo "<input type='hidden' name='carta1[]' value='" .$carta1[$i]."'>"; 
-                        }
                         ?>
                 </div>
             </div>
